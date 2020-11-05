@@ -50,4 +50,4 @@ WORKDIR /var/www/html
 
 RUN composer global require laravel/installer
 
-ENTRYPOINT ["../.composer/vendor/bin/laravel"]
+ENTRYPOINT ["/var/www/.composer/vendor/bin/laravel"]
